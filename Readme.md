@@ -1,0 +1,1 @@
+Dev IMC é uma calculadora de IMC na palma da sua mão para você saber como está sua saúde, desenvolvi esse projeto para estudar minha lógica de programção no Javascript e minhas técnicas visuais com HTML e CSS!
