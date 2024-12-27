@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Dev IMC, uma calculadora de IMC na palma da sua mão para você saber como está sua saúde">
+    <meta name="keywords" content="calculadora, web-site, imc">
+    <meta name="author" content="Kauã Henrique">
+
+    <meta property="og:title" content="Dev IMC - Calculadora IMC">
+    <meta property="og:description" content="Uma calculadora de IMC na palma da sua mão para você saber como está sua saúde">
+    <meta property="og:image" content="https://dev-kaua.vercel.app/assets/logo-kaua-dev.png">
+
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet" /> 
+
+    <link rel="shortcut icon" href="/assets/dev-kaua.ico" type="image/x-icon">
+    <link rel="stylesheet" href="/styles/style.css">
+
+    <title>Dev IMC</title>
+</head>
+<body>
+    <div class="container">
+
+        <div class="text">
+            <h1>Dev IMC</h1>
+            <p>Calcule aqui o seu índice de massa corporal</p>
+        </div>
+
+        <div class="imc-content">
+            <form onsubmit="return calcular(event)">
+                <label for="nome">Digite seu nome:</label>
+                <input type="text" id="nome" class="name" placeholder="Exemplo: Kauã">
+
+                <label for="peso">Digite seu peso:</label>
+                <input type="text" id="peso" class="peso" placeholder="Exemplo: 80">
+
+                <label for="altura">Digite sua altura:</label>
+                <input type="text" id="altura" class="altura" placeholder="Exemplo: 1.75">
+
+                <input type="submit" class="btn-enviar" value="Calcular IMC">
+            </form>
+
+            <div id="resultado-imc"></div>
+            <div id="text-imc"></div>
+        </div>
+    </div>
+
+    <script src="/scripts/script.js"></script>
+</body>
+</html>
