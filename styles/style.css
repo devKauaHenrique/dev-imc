@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-image: linear-gradient(to right, #2c174a 0%, #5f3281 100%);
+    font-family: "Orbitron", serif;
+    overflow-y: hidden;
+}
+
+.container{
+    padding-block: 1rem;
+    padding-inline: 1rem;
+    height: 100vh;
+    max-width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.text{
+    text-align: center;
+    color: white;
+}
+
+.text p{
+    margin-top: 6px;
+    font-weight: 600;
+}
+
+.imc-content{
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    width: 300px;
+    margin-bottom: 2rem;
+}
+
+.imc-content form{
+    display: flex;
+    flex-direction: column;
+}
+
+.imc-content label{
+    margin-bottom: 4px;
+    font-size: 18px;
+    color: #2c174a;
+    font-weight: bold;
+}
+
+.imc-content input:not(.btn-enviar){
+    margin-bottom: 20px;
+}
+
+.imc-content input{
+    padding: 10px;
+    border: none;
+    border: 2px solid #2c174a;
+    font-size: 14px;
+    font-weight: 600;
+    color: #2c174a;
+    border-radius: 10px;
+    transition: all 0.8s ease;
+    outline: none;
+}
+
+.imc-content input:not(.btn-enviar):hover{
+    box-shadow: 0 4px 6px rgba(68, 11, 114, 0.5);
+}
+
+.imc-content input.btn-enviar{
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+.imc-content input.btn-enviar:hover{
+    background-color: #2c174a;
+    color: white;
+}
+
+#resultado-imc{
+    margin-top: 10px;
+    margin-bottom: 2px;
+    font-weight: 600;
+    font-size: 18px;
+    color: #2c174a;
+    text-align: center;
+}
+
+#text-imc{
+    font-weight: 600;
+    font-size: 18px;
+    color: #2c174a;
+    text-align: center;
+}
+
+@media (max-width: 768px){
+    .text p{
+        max-width: 250px;
+    }
+}
